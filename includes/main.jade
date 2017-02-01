@@ -1,0 +1,619 @@
+//- includes/main.jade
+div.main
+	div.banner
+		- var slides=["./images/banner-1.jpg", "./images/banner-2.jpg", "./images/banner-3.jpg"]
+		div#main-slider
+			-each slide in slides
+				div.slide
+					img(src=slide alt="").imgScale
+					div.overlay
+					div.banner-info
+						p.caption inspiration
+						h2 5 Ways milllennials can start building their future today
+						a(href="#").button.round read more
+						a(href="#")
+							figure.banner-user-block
+								div.avatar-img
+									img(src="./images/avatar-user-banner.png" alt="")
+								figcaption 
+									strong Henry Little
+									div.holder
+										span.date Apri 28, 2016
+										span.time 10:15
+						ul.user-info
+							li: a(href="#") 
+								i.mdi.mdi-comment-multiple-outline
+								span.text Comments
+								span.number (28)
+							li: a(href="#") 
+								i.mdi.mdi-heart-outline
+								span Likes 
+								span.number (07)
+		button.left
+			i.mdi.mdi-chevron-left
+		button.right
+			i.mdi.mdi-chevron-right
+	div.blog-box
+		div.column.row
+			div.row
+				div.medium-12.large-12.columns.desctop-show
+					ul.blog-list 
+						li: span.text-title 
+						li.active: span.round all
+						li: a(href="#").round photography
+						li: a(href="#").round lifestyle
+						li: a(href="#").round trip
+						li: a(href="#").round inspiration
+				div.medium-12.large-12.columns.mobile-show
+					div.select-holder.radius
+						select
+							option(value="0") Sort blog
+							option(value="1") All
+							option(value="2") Photography
+							option(value="3") Lifestyle
+							option(value="4") Trip
+							option(value="4") Inspiration
+						div.arrow-block
+							i.mdi.mdi-menu-up
+							i.mdi.mdi-menu-down
+	section.blog-content
+		div.column.row
+			div.row
+				div.medium-6.large-8.columns
+					article.media-box.radius
+						div.preview-media
+							a(href="#")
+								img(src="./images/img-1.jpg" alt="")
+								i.mdi.mdi-play-circle-outline
+								div.caption-media-box
+									strong lifestyle
+									div.info-caption-media-box
+										span.left
+											i.mdi.mdi-comment-multiple-outline
+											span.number 7
+										span.right 
+											i.mdi.mdi-heart-outline
+											span.number 15
+						div.preview-content
+							a(href="#")
+								h2 10 Things To Do To Change Your Life Forever
+							p The one constant thing in our life is change. We cannot avoid it and the more we resist change the tougher our life becomes. I know this because I was very skilled at deflecting change in life.
+						
+						div.preview-user-block
+							a(href="#")
+								figure
+									div.avatar-img
+										img(src="./images/avatar-user-blog-post-1.png" alt="")
+									figcaption 
+										strong Henry Little
+										div.holder
+											span.date Apri 28, 2016
+											span.time 10:15
+							i.mdi.mdi-dots-vertical
+					article.media-box.media-box-horizontal.radius
+						div.preview-media
+							a(href="#")
+								img(src="./images/img-30.jpg" alt="")
+								i.mdi.mdi-play-circle-outline
+								div.caption-media-box
+									strong inspiration
+									div.info-caption-media-box
+										span.left
+											i.mdi.mdi-comment-multiple-outline
+											span.number 7
+										span.right 
+											i.mdi.mdi-heart-outline
+											span.number 15
+						div.content
+							div.preview-content
+								a(href="#")
+									h2 4 Natural Ways To Have Young Skin
+								p.desctop-show Lorem ipsum dolor sit amet, to consectetur  adipi scing elit. Nulla vehicula lorem and lacus. Vestibulum vitae mauris lorem ipsum doar.
+							div.preview-user-block
+								a(href="#")
+									figure
+										div.avatar-img
+											img(src="./images/avatar-user-blog-post-2.png" alt="")
+										figcaption 
+											strong James Leman
+											div.holder
+												span.date April 28, 2016
+								i.mdi.mdi-dots-vertical
+					article.media-box.media-box-horizontal.radius
+						div.preview-media
+							a(href="#")
+								img(src="./images/img-12.jpg" alt="")
+								div.caption-media-box
+									strong inspiration
+									div.info-caption-media-box
+										span.left
+											i.mdi.mdi-comment-multiple-outline
+											span.number 7
+										span.right 
+											i.mdi.mdi-heart-outline
+											span.number 15
+						div.content
+							div.preview-content
+								a(href="#")
+									h2 Six Hobbies That Can Help You Beat Stress
+								p.desctop-show Lorem ipsum dolor sit amet, to consectetur  adipi scing elit. Nulla vehicula lorem and lacus. Vestibulum vitae mauris lorem ipsum doar.
+							div.preview-user-block
+								a(href="#")
+									figure
+										div.avatar-img
+											img(src="./images/avatar-user-blog-post-3.png" alt="")
+										figcaption 
+											strong James Leman
+											div.holder
+												span.date April 28, 2016
+								i.mdi.mdi-dots-vertical
+					article.media-box.media-box-horizontal.radius
+						div.preview-media
+							a(href="#")
+								img(src="./images/img-29.jpg" alt="")
+								div.caption-media-box
+									strong inspiration
+									div.info-caption-media-box
+										span.left
+											i.mdi.mdi-comment-multiple-outline
+											span.number 7
+										span.right 
+											i.mdi.mdi-heart-outline
+											span.number 15
+						div.content
+							div.preview-content
+								a(href="#")
+									h2 10 Singals From Your Body Telling You Should Sleep More
+								p.desctop-show Lorem ipsum dolor sit amet, to consectetur  adipi scing elit. Nulla vehicula lorem and lacus. Vestibulum vitae mauris lorem ipsum doar.
+							div.preview-user-block
+								a(href="#")
+									figure
+										div.avatar-img
+											img(src="./images/avatar-user-blog-post-1.png" alt="")
+										figcaption 
+											strong Benjamin Miller
+											div.holder
+												span.date April 28, 2016
+								i.mdi.mdi-dots-vertical
+					div.row
+						div.medium-12.large-4.columns
+							article.media-box.media-box-vertical.radius
+								div.preview-media
+									a(href="#")
+										img(src="./images/img-31.jpg" alt="")
+										i.mdi.mdi-play-circle-outline
+										div.caption-media-box
+											strong inspiration
+											div.info-caption-media-box
+												span.left
+													i.mdi.mdi-comment-multiple-outline
+													span.number 7
+												span.right 
+													i.mdi.mdi-heart-outline
+													span.number 15
+								div.content
+									div.preview-content
+										a(href="#")
+											h2 Food That Actually Taste Better When You Freeze 
+										p Lorem ipsum dolor sit amet, to consectetur  adipi scing elit. Nulla vel vehicula lorem and lacus. Vestibulum vitae mauris.
+									div.preview-user-block
+										a(href="#")
+											figure
+												div.avatar-img
+													img(src="./images/avatar-user-blog-post-2.png" alt="")
+												figcaption 
+													strong James Leman
+													div.holder
+														span.date April 28, 2016
+										i.mdi.mdi-dots-vertical
+						div.medium-12.large-4.columns
+							article.media-box.media-box-vertical.radius
+								div.preview-media
+									a(href="#")
+										img(src="./images/img-3.jpg" alt="")
+										div.caption-media-box
+											strong trip
+											div.info-caption-media-box
+												span.left
+													i.mdi.mdi-comment-multiple-outline
+													span.number 3
+												span.right 
+													i.mdi.mdi-heart-outline
+													span.number 15
+								div.content
+									div.preview-content
+										a(href="#")
+											h2 Why It’s Amazing To Date People Who Love Traveling
+										p Lorem ipsum dolor sit amet, to consectetur  adipi scing elit. Nulla vel vehicula lorem and lacus. Vestibulum vitae mauris.
+									div.preview-user-block
+										a(href="#")
+											figure
+												div.avatar-img
+													img(src="./images/avatar-user-blog-post-3.png" alt="")
+												figcaption 
+													strong Benjamin Miller
+													div.holder
+														span.date April 28, 2016
+										i.mdi.mdi-dots-vertical
+						div.medium-12.large-4.columns
+							article.media-box.media-box-vertical.radius
+								div.preview-media
+									- var slides=["./images/img-4.jpg", "./images/img-3.jpg", "./images/img-31.jpg"]
+									div#mini-slider
+										-each slide in slides
+											div.slide
+												img(src=slide alt="")
+									button.left-arrow-mini-slider
+										i.mdi.mdi-chevron-left
+									button.right-arrow-mini-slider
+										i.mdi.mdi-chevron-right
+									div.caption-media-box
+										strong lifestyle
+										div.info-caption-media-box
+											span.left
+												i.mdi.mdi-comment-multiple-outline
+												span.number 18
+											span.right 
+												i.mdi.mdi-heart-outline
+												span.number 15
+								div.content
+									div.preview-content
+										a(href="#")
+											h2 5 Useful Tips for Novice Painters
+										p Lorem ipsum dolor sit amet, to consectetur  adipi scing elit. Nulla vel vehicula lorem and lacus. Vestibulum vitae mauris.
+									div.preview-user-block
+										a(href="#")
+											figure
+												div.avatar-img
+													img(src="./images/avatar-user-blog-post-1.png" alt="")
+												figcaption 
+													strong Henry Little
+													div.holder
+														span.date April 28, 2016
+										i.mdi.mdi-dots-vertical
+					div.row
+						div.medium-12.large-6.columns
+							article.media-box.media-box-vertical-large.radius
+								div.preview-media
+									a(href="#")
+										div.img-holder
+											img(src="./images/img-5.jpg" alt="")
+										div.caption-media-box
+											strong lifestyle
+											div.info-caption-media-box
+												span.left
+													i.mdi.mdi-comment-multiple-outline
+													span.number 3
+												span.right 
+													i.mdi.mdi-heart-outline
+													span.number 15
+								div.content
+									div.preview-content
+										a(href="#")
+											h2 11 Fantastic Ways Passionate
+										p Lorem ipsum dolor sit amet, to consectetur  adipi scing elit. Nulla vel vehicula lorem and lacus. Vestibulum vitae mauris gravida, ipsu viverra urna at, dictume nunc fringilla quam.
+									div.preview-user-block
+										a(href="#")
+											figure
+												div.avatar-img
+													img(src="./images/avatar-user-blog-post-2.png" alt="")
+												figcaption 
+													strong James Leman
+													div.holder
+														span.date April 28, 2016
+										i.mdi.mdi-dots-vertical
+						div.medium-12.large-6.columns
+							article.media-box.media-box-vertical-large.radius
+								div.preview-media
+									a(href="#")
+										div.img-holder
+											img(src="./images/img-6.jpg" alt="")
+										div.caption-media-box
+											strong inspiration
+											div.info-caption-media-box
+												span.left
+													i.mdi.mdi-comment-multiple-outline
+													span.number 3
+												span.right 
+													i.mdi.mdi-heart-outline
+													span.number 15
+								div.content
+									div.preview-content
+										a(href="#")
+											h2 Art Makes You Mentally Healthy
+										p Lorem ipsum dolor sit amet, to consectetur  adipi scing elit. Nulla vel vehicula lorem and lacus. Vestibulum vitae mauris gravida, ipsu viverra urna at, dictume nunc fringilla quam.
+									div.preview-user-block
+										a(href="#")
+											figure
+												div.avatar-img
+													img(src="./images/avatar-user-blog-post-3.png" alt="")
+												figcaption 
+													strong Benjamin Miller
+													div.holder
+														span.date April 28, 2016
+										i.mdi.mdi-dots-vertical
+					div.row
+						div.medium-12.large-12.columns.desctop-show
+							a(href="#").more More
+								span.arrow.radius-round
+									i.mdi.mdi-arrow-right
+				div.medium-6.large-4.columns.desctop-show
+					aside.sidebar.radius
+						div.input-holder.round
+							input.search.round(type="text" placeholder="Search")
+							button.btn-search-button(type="submit").radius-round
+								i.mdi.mdi-magnify
+						h3.heading categories
+						ul.categories
+							li: a(href="#") Photography
+								span.number 195
+							li: a(href="#") Illustration
+								span.number 15
+							li: a(href="#") Graphic Design
+								span.number 36
+							li: a(href="#") Web design
+								span.number 220
+							li: a(href="#") Videography
+								span.number 17
+						h3.heading.desctop-show subscribe
+						form.form-block
+							label Name
+							input.radius(type="text" placeholder="Igor Ten")
+							label Email
+							input.radius(type="email" placeholder="email@adress.com")
+							button.button.radius(type="submit") subscribe
+						div.delimiter
+							span or
+						ul.social-list.social-list-color-background
+							li.radius-round.facebook: a(href="#")
+								i.fa.fa-facebook(aria-hidden="true")
+							li.radius-round.twitter: a(href="#")
+								i.fa.fa-twitter(aria-hidden="true")
+							li.radius-round.vk: a(href="#")
+								i.fa.fa-vk(aria-hidden="true")
+							li.radius-round.pinterest: a(href="#")
+								i.fa.fa-pinterest-p(aria-hidden="true")
+							li.radius-round.tumblr: a(href="#")
+								i.fa.fa-tumblr(aria-hidden="true")
+							li.radius-round.dribbble: a(href="#")
+								i.fa.fa-dribbble(aria-hidden="true")
+						h3.heading.desctop-show tab post widget
+						div.button-group-filters.radius
+							a(href="#").button.button-group-left recent post
+							a(href="#").button.button-group-right.active popular post
+						ul.content-popular-post
+							li: a(href="#")
+								div.img-holder
+									img(src="./images/img-7.jpg" alt="")
+								div.info-posts
+									div.holder
+										span.date April 28, 2016
+										span.number-box
+											i.mdi.mdi-comment-multiple-outline
+											span.number 17
+									strong Duis commodo elit sed nisi molestie
+							li: a(href="#")
+								div.img-holder
+									img(src="./images/img-8.jpg" alt="")
+								div.info-posts
+									div.holder
+										span.date April 28, 2016
+										span.number-box
+											i.mdi.mdi-comment-multiple-outline
+											span.number 17
+									strong Duis commodo elit sed nisi molestie
+							li: a(href="#")
+								div.img-holder
+									img(src="./images/img-9.jpg" alt="")
+								div.info-posts
+									div.holder
+										span.date April 28, 2016
+										span.number-box
+											i.mdi.mdi-comment-multiple-outline
+											span.number 17
+									strong Duis commodo elit sed nisi molestie
+							li: a(href="#")
+								div.img-holder
+									img(src="./images/img-10.jpg" alt="")
+								div.info-posts
+									div.holder
+										span.date April 28, 2016
+										span.number-box
+											i.mdi.mdi-comment-multiple-outline
+											span.number 17
+									strong Duis commodo elit sed nisi molestie
+						h3.heading tags
+						ul.tags
+							li: a(href="#").radius Photography
+							li: a(href="#").radius Webdesign
+							li: a(href="#").radius Youtube
+							li: a(href="#").radius Envato
+							li: a(href="#").radius Art
+							li: a(href="#").radius Themefotest
+							li: a(href="#").radius Illustration
+
+				// FOR MOBILE-FIRST
+				div.small-12.columns.mobile-show
+					aside.sidebar.sidebar-mobile
+						div.about-us
+							h2.logo.logo-aside: a(href="#") Logo
+							p PASCO sit amet varius orci. Duis upse commodo elit sedamocid nisimole up stie, vitae fringilla justo fringilla. Lori ibulum libr portaman neque enia gravida elementum facilisis ipsum leonardo. Vestibulum loeuenim and libero, lobortis eu tortor ut, hendrerit  maxi tellus. Vivamus egestas massa leo, sit amet facilisis commodo.
+							a(href="#").button.button-gray.round read more
+						h3.heading categories
+						ul.categories
+							li: a(href="#") Photography
+								span.number 195
+							li: a(href="#") Illustration
+								span.number 15
+							li: a(href="#") Graphic Design
+								span.number 36
+							li: a(href="#") Web design
+								span.number 220
+							li: a(href="#") Videography
+								span.number 17
+						h3.heading tags
+						ul.tags
+							li: a(href="#").radius Photography
+							li: a(href="#").radius Webdesign
+							li: a(href="#").radius Youtube
+							li: a(href="#").radius Envato
+							li: a(href="#").radius Art
+							li: a(href="#").radius Themefotest
+							li: a(href="#").radius Illustration
+						h3.heading flickr
+						ul.widget
+							li: a(href="#") 
+								img(src="./images/img-20.jpg" alt="")
+							li: a(href="#") 
+								img(src="./images/img-21.jpg" alt="")
+							li: a(href="#") 
+								img(src="./images/img-22.jpg" alt="")
+							li: a(href="#") 
+								img(src="./images/img-23.jpg" alt="")
+					
+
+
+
+	div.images-box.desctop-show
+		div.img-holder
+			img(src="./images/img-11.jpg" alt="")
+		div.img-holder
+			img(src="./images/img-2.jpg" alt="")
+		div.img-holder
+			img(src="./images/img-13.jpg" alt="")
+		div.img-holder
+			img(src="./images/img-14.jpg" alt="")
+		div.img-holder
+			img(src="./images/img-15.jpg" alt="")
+		div.img-holder
+			img(src="./images/img-16.jpg" alt="")
+		div.img-holder
+			img(src="./images/img-17.jpg" alt="")
+		div.img-holder
+			img(src="./images/img-18.jpg" alt="")
+	section.subscribe.desctop-show
+		div.top-box
+			div.column.row
+				div.row
+					div.medium-12.large-12.column
+						h2 Subscribe to our newsletter
+						form.mini-form-send-letter
+							input.round(type="email" placeholder="Email Adress")
+							button.button.round(type="submit") subscribe
+		div.bottom-box
+			div.column.row
+				div.row
+					div.medium-6.large-3.column
+						h3 pages widget
+						ul.accordion(data-accordion)
+							li.accordion-item(data-accordion-item)
+								a(href="#").accordion-title home
+								div.accordion-content(data-tab-content)
+									ul
+										li: a(href="#") Service
+										li: a(href="#") FAQ
+										li: a(href="#") About
+							li.accordion-item.is-active(data-accordion-item)
+								a(href="#").accordion-title pages
+								div.accordion-content(data-tab-content)
+									ul
+										li: a(href="#") Service
+										li: a(href="#") FAQ
+										li: a(href="#") About
+							li.accordion-item(data-accordion-item)
+								a(href="#").accordion-title portfolio
+								div.accordion-content(data-tab-content)
+									ul
+										li: a(href="#") Service
+										li: a(href="#") FAQ
+										li: a(href="#") About
+							li.accordion-item(data-accordion-item)
+								a(href="#").accordion-title blog
+								div.accordion-content(data-tab-content)
+									ul
+										li: a(href="#") Service
+										li: a(href="#") FAQ
+										li: a(href="#") About
+							li.accordion-item(data-accordion-item)
+								a(href="#").accordion-title shop
+								div.accordion-content(data-tab-content)
+									ul
+										li: a(href="#") Service
+										li: a(href="#") FAQ
+										li: a(href="#") Abouts
+					div.medium-6.large-3.column
+						h3 twitter widget
+						ul.post-twitter
+							li 
+								div.twit-text
+									i.fa.fa-twitter(aria-hidden="true")
+									a(href="#") @PASCO, Duis commodo elit sed nisi molestie
+								div.twit-data
+									span.time 2 hours ago
+										i.mdi.mdi-arrow-right
+									a(href="#") Reply
+									a(href="#") Retweet
+									a(href="#") Favorite
+							li 
+								div.twit-text
+									i.fa.fa-twitter(aria-hidden="true")
+									a(href="#") @PASCO, Duis commodo elit sed nisi molestie
+								div.twit-data
+									span.time 2 hours ago
+										i.mdi.mdi-arrow-right
+									a(href="#") Reply
+									a(href="#") Retweet
+									a(href="#") Favorite
+							li 
+								div.twit-text
+									i.fa.fa-twitter(aria-hidden="true")
+									a(href="#") @PASCO, Duis commodo elit sed nisi molestie
+								div.twit-data
+									span.time 2 hours ago
+										i.mdi.mdi-arrow-right
+									a(href="#") Reply    
+									a(href="#") Retweet
+									a(href="#") Favorite
+						h3 social widget
+						ul.social-list.social-list-color-background
+							li.radius-round.facebook: a(href="#")
+								i.fa.fa-facebook(aria-hidden="true")
+							li.radius-round.twitter: a(href="#")
+								i.fa.fa-twitter(aria-hidden="true")
+							li.radius-round.vk: a(href="#")
+								i.fa.fa-vk(aria-hidden="true")
+							li.radius-round.pinterest: a(href="#")
+								i.fa.fa-pinterest-p(aria-hidden="true")
+							li.radius-round.tumblr: a(href="#")
+								i.fa.fa-tumblr(aria-hidden="true")
+							li.radius-round.dribbble: a(href="#")
+								i.fa.fa-dribbble(aria-hidden="true")
+					div.medium-6.large-3.column
+						h3 pages flickr widget
+						ul.widget
+							li: a(href="#") 
+								img(src="./images/img-20.jpg" alt="")
+							li: a(href="#")
+								img(src="./images/img-19.jpg" alt="")
+							li: a(href="#")
+								img(src="./images/img-21.jpg" alt="")
+							li: a(href="#")
+								img(src="./images/img-22.jpg" alt="")
+							li: a(href="#")
+								img(src="./images/img-23.jpg" alt="")
+							li: a(href="#")
+								img(src="./images/img-24.jpg" alt="")
+							li: a(href="#")
+								img(src="./images/img-25.jpg" alt="")
+							li: a(href="#")
+								img(src="./images/img-26.jpg" alt="")
+							li: a(href="#")
+								img(src="./images/img-27.jpg" alt="")
+					div.medium-6.large-3.column
+						h3 pages news letter
+						form.send-letter
+							input.radius(type="text" placeholder="Name")
+							input.radius(type="email" placeholder="Email Address")
+							textarea(cols="30" rows="5" placeholder="Message").radius
+							button.button.button-gray.radius(type="submit") subscribe
+

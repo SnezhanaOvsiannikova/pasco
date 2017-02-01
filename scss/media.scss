@@ -1,0 +1,134 @@
+@import "variables.scss";
+
+// @media (min-width: 768px) {
+	
+@media (max-width: 1200px) {
+	.column.row {
+		width: 100%;
+	}
+	.settings-menu-header {
+		padding-right: 0;
+	}
+}
+@media (min-width: 1200px) {
+	.header {
+		.bottom-header {
+			.settings-menu-header {
+				li {
+					margin-left: 14px;
+					padding-left: 15px;
+					&:first-child {
+						margin-left: 0;
+						padding-left: 0;
+					}
+				}
+			}
+		}
+	}
+	.sidebar {
+		width: 86%;
+	}
+}
+@media (min-width: 1024px) {
+	.logo {
+		margin: 11px 0 0 0;
+	}
+	.top-bar {
+		.menu.menu-main {
+			.mdi-chevron-down {
+				display: inline-block;
+			}
+			.active:after {
+				position: absolute;
+				content: "";
+				bottom: -4px;
+				right: 5%;
+				left: -21%;
+				height: 4px;
+				background-color: $hotPink; 
+			}
+		}
+	}
+	.footer {
+		.search-settings {
+			.settings-menu {
+				margin-left: 10px;
+			}
+		}
+	}
+}
+@media (min-width: 768px) {
+	.header {
+		nav {
+			padding-top: 0;
+		}
+		.top-header {
+			background-color: $carbonic;
+		}
+		.bottom-header {
+			position: absolute;
+			padding-top: 10px;
+			top: 45px;
+			left: 0;
+			right: 0;
+			background-color: transparent;
+		}
+	}
+	.social-list {
+		display: block;
+	}
+	.mobile-show {
+		display: none;
+	}
+	.desctop-show {
+		display: block;
+	}
+	.banner {
+		display: block;
+	}
+	.blog-content {
+		.media-box {
+			.preview-media {
+				height: 420px;
+			}
+		}
+		.preview-content {
+			h2 {
+				font-size: 18px;
+				line-height: 22px;
+			}
+		}
+		.media-box-horizontal {
+			.preview-media {
+				height: auto;
+				width: 30%;
+				.caption-media-box .info-caption-media-box {
+					float: right;
+				}
+				h2 {
+					font-size: 16px;
+					line-height: 20px;
+				}
+			}
+			.content {
+				width: 70%;
+				.avatar-img {
+					display: inline-block;
+				}
+				.preview-user-block {
+					padding: 9px 21px;
+				}
+			}
+		}
+		.media-box-vertical {
+			.preview-media {
+				height: 160px;
+			}
+		}
+		.media-box-vertical-large {
+			.preview-media {
+				height: 300px;
+			}
+		}
+	}
+}
