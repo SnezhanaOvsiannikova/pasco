@@ -1,0 +1,75 @@
+@media (max-width: 1200px) {
+  .column.row {
+    width: 100%; }
+  .settings-menu-header {
+    padding-right: 0; } }
+
+@media (min-width: 1200px) {
+  .header .bottom-header .settings-menu-header li {
+    margin-left: 14px;
+    padding-left: 15px; }
+    .header .bottom-header .settings-menu-header li:first-child {
+      margin-left: 0;
+      padding-left: 0; }
+  .sidebar {
+    width: 86%; } }
+
+@media (min-width: 1024px) {
+  .logo {
+    margin: 11px 0 0 0; }
+  .top-bar .menu.menu-main .mdi-chevron-down {
+    display: inline-block; }
+  .top-bar .menu.menu-main .active:after {
+    position: absolute;
+    content: "";
+    bottom: -4px;
+    right: 5%;
+    left: -21%;
+    height: 4px;
+    background-color: #ff4081; }
+  .footer .search-settings .settings-menu {
+    margin-left: 10px; } }
+
+@media (min-width: 768px) {
+  .header nav {
+    padding-top: 0; }
+  .header .top-header {
+    background-color: #191919; }
+  .header .bottom-header {
+    position: absolute;
+    padding-top: 10px;
+    top: 45px;
+    left: 0;
+    right: 0;
+    background-color: transparent; }
+  .social-list {
+    display: block; }
+  .mobile-show {
+    display: none; }
+  .desctop-show {
+    display: block; }
+  .banner {
+    display: block; }
+  .blog-content .media-box .preview-media {
+    height: 420px; }
+  .blog-content .preview-content h2 {
+    font-size: 18px;
+    line-height: 22px; }
+  .blog-content .media-box-horizontal .preview-media {
+    height: auto;
+    width: 30%; }
+    .blog-content .media-box-horizontal .preview-media .caption-media-box .info-caption-media-box {
+      float: right; }
+    .blog-content .media-box-horizontal .preview-media h2 {
+      font-size: 16px;
+      line-height: 20px; }
+  .blog-content .media-box-horizontal .content {
+    width: 70%; }
+    .blog-content .media-box-horizontal .content .avatar-img {
+      display: inline-block; }
+    .blog-content .media-box-horizontal .content .preview-user-block {
+      padding: 9px 21px; }
+  .blog-content .media-box-vertical .preview-media {
+    height: 160px; }
+  .blog-content .media-box-vertical-large .preview-media {
+    height: 300px; } }
